@@ -1,0 +1,6 @@
+| Passo | Entrada | Variáveis | Cálculo | Condição | Saída |
+|---|---|---|---|---|---|
+| 1 | 2024 | anoAtual = 2024 | - | - | Digite o ano atual: |
+| 2 | 2010 | anoNascimento = 2010 | - | - | Digite o seu ano de nascimento: |
+| 3 | - | idade = 2024 - 2010 | idade = 14 | - | - |
+| 4 | - | - | - | 14 < 16 (verdadeiro) | Você NÃO pode votar. |

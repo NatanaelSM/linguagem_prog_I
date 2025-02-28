@@ -1,0 +1,6 @@
+| Passo | Entrada | Variáveis | Cálculo | Saída |
+|---|---|---|---|---|
+| 1 | 1000.0 | salario_atual = 1000.0 | - | Salario atual: |
+| 2 | 10.0 | reajuste = 10.0 | - | Reajuste: |
+| 3 | - | new_salario = 1000.0 * (10.0 / 100 + 1) | new_salario = 1000.0 * (0.1 + 1) = 1000.0 * 1.1 = 1100.0 | - |
+| 4 | - | - | - | 1100.0 |

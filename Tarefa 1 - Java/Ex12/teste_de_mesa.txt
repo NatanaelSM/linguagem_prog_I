@@ -1,0 +1,5 @@
+| Passo | Entrada | Variáveis | Condição | Saída |
+|---|---|---|---|---|
+| 1 | 10.0 | num1 = 10.0 | - | Primeiro número: |
+| 2 | 5.0 | num2 = 5.0 | - | Segundo número: |
+| 3 | - | - | 10.0 > 5.0 (verdadeiro) | O primeiro número é maior |

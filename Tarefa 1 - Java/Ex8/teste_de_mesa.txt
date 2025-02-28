@@ -1,0 +1,4 @@
+| Passo | Entrada | Variáveis | Condição | Saída |
+|---|---|---|---|---|
+| 1 | -5.0 | num = -5.0 | - | Numero: |
+| 2 | - | - | -5.0 < 0 (verdadeiro) | Negativo! |

@@ -1,0 +1,14 @@
+| Passo | Entrada | Variáveis | Cálculo | Condição | Saída |
+|---|---|---|---|---|---|
+| 1 | 7.0 | p1 = 7.0 | - | - | Nota P1: |
+| 2 | 8.0 | e1 = 8.0 | - | - | Nota E1: |
+| 3 | 9.0 | e2 = 9.0 | - | - | Nota E2: |
+| 4 | 1.0 | ponto_extra = 1.0 | - | - | Ponto extra: |
+| 5 | 8.0 | api = 8.0 | - | - | Nota API: |
+| 6 | 6.0 | sub = 6.0 | - | - | Nota sub: |
+| 7 | - | M = 7.0 * 0.6 + ((8.0 + 9.0) / 2) * 0.4 | M = 4.2 + (17.0 / 2) * 0.4 = 4.2 + 8.5 * 0.4 = 4.2 + 3.4 = 7.6 | - | - |
+| 8 | - | parte1 = 7.6 * 0.5 | parte1 = 3.8 | - | - |
+| 9 | - | parte2 = (7.6 > 5.9) ? 8.0 * 0.5 : 0 | parte2 = 4.0 | 7.6 > 5.9 (verdadeiro) | - |
+| 10 | - | parte3 = 1.0 | parte3 = 1.0 | - | - |
+| 11 | - | parte4 = 6.0 * 0.3 | parte4 = 1.8 | - | - |
+| 12 | - | mediaFinal = 3.8 + 4.0 + 1.0 + 1.8 | mediaFinal = 10.6 | - | A média final de LP1 é: 10.6 |

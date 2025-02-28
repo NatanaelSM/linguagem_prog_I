@@ -1,0 +1,5 @@
+| Passo | Entrada | Variáveis | Cálculo | Saída |
+|---|---|---|---|---|
+| 1 | 1000.0 | val_fabrica = 1000.0 | - | Custo de fábrica: |
+| 2 | - | val_final = 1000.0 + (1000.0 * 0.28f) + (1000.0 * 0.45f) | val_final = 1000.0 + 280.0 + 450.0 = 1730.0 | - |
+| 3 | - | - | - | 1730.0 |

@@ -1,0 +1,4 @@
+| Passo | Entrada | Variáveis | Condição | Cálculo | Saída |
+|---|---|---|---|---|---|
+| 1 | 10.0 | num_macas = 10.0 | - | - | Numero de maças compradas: |
+| 2 | - | - | 10.0 < 12 (verdadeiro) | valor_maca = 10.0 * 1.3f = 13.0 | 13.0 |

@@ -1,0 +1,4 @@
+| Passo | Entrada | Variáveis | Condição | Saída |
+|---|---|---|---|---|
+| 1 | 15.0 | num = 15.0 | - | Numero: |
+| 2 | - | - | 15.0 > 10 (verdadeiro) | É MAIOR QUE 10! |

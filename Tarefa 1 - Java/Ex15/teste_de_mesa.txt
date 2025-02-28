@@ -1,0 +1,5 @@
+| Passo | Variáveis | Cálculo | Saída |
+|---|---|---|---|
+| 1 | gasto_tot = 0 | gasto_tot = 15000 + 23000 + 17000 | - |
+| 2 | gasto_tot = 55000 | media_mes = 55000 / 3 | - |
+| 3 | media_mes = 18333 | - | Gasto total: 55000 \nMédia de gastos mensal: 18333 |

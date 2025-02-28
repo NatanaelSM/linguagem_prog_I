@@ -1,0 +1,6 @@
+| Passo | Entrada | Variáveis | Cálculo | Condição | Saída |
+|---|---|---|---|---|---|
+| 1 | 7.0 | nota1 = 7.0 | - | - | Nota avaliação 1: |
+| 2 | 8.0 | nota2 = 8.0 | - | - | Nota avaliação 2: |
+| 3 | - | media = (7.0 + 8.0) / 2 | media = 15.0 / 2 = 7.5 | - | - |
+| 4 | - | - | - | 7.5 >= 6 (verdadeiro) | Aprovado! \nnota: 7.5 |

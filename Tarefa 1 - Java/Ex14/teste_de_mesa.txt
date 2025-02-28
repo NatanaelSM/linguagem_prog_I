@@ -1,0 +1,5 @@
+| Passo | Entrada | Variáveis | Condição | Cálculo | Saída |
+|---|---|---|---|---|---|
+| 1 | 10 | hora_inicial = 10 | - | - | Horário de início: |
+| 2 | 15 | hora_final = 15 | - | - | Horário final: |
+| 3 | - | - | 10 > 15 (falso) | temp_jogo = 15 - 10 = 5 | 5 |

@@ -1,0 +1,10 @@
+| Passo | Entrada | Variáveis | Cálculo | Saída |
+|---|---|---|---|---|
+| 1 | 100 | tot_eleitores = 100 | - | Total de eleitores: |
+| 2 | 10 | brancos = 10 | - | Votos brancos: |
+| 3 | 5 | nulos = 5 | - | Votos nulos: |
+| 4 | 85 | validos = 85 | - | Votos válidos: |
+| 5 | - | perc_brancos = (10 * 100) / 100 | perc_brancos = 10.0 | - |
+| 6 | - | perc_nulos = (5 * 100) / 100 | perc_nulos = 5.0 | - |
+| 7 | - | perc_validos = (85 * 100) / 100 | perc_validos = 85.0 | - |
+| 8 | - | - | - | O percentual de votos brancos é 10.0, de nulos 5.0 e válidos 85.0 |
