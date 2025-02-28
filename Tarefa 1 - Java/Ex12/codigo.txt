@@ -1,0 +1,20 @@
+import java.util.Scanner;
+ 
+public class Ex12 {
+ 
+    public static void main(String[] args) {
+ 
+    	Scanner scanner = new Scanner(System.in);
+ 
+        System.out.println("Primeiro número:");
+        Float num1 = scanner.nextFloat();
+ 
+        System.out.println("Segundo número:");
+        Float num2 = scanner.nextFloat();
+        
+        
+        System.out.println((num1>num2) ? "O primeiro número é maior" : "O segundo número é maior");
+ 
+        scanner.close();
+    }
+}

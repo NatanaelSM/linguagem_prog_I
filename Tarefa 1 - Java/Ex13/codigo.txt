@@ -1,0 +1,23 @@
+import java.util.Scanner;
+ 
+public class Ex13 {
+ 
+    public static void main(String[] args) {
+ 
+    	Scanner scanner = new Scanner(System.in);
+ 
+        System.out.println("Primeiro número:");
+        Float num1 = scanner.nextFloat();
+ 
+        System.out.println("Segundo número:");
+        Float num2 = scanner.nextFloat();
+        
+        if (num1>num2) {
+        	System.out.printf("%s %s", num2, num1);
+        }else {
+        	System.out.printf("%s %s", num1, num2);
+        }
+ 
+        scanner.close();
+    }
+}

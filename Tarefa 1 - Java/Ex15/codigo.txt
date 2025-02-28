@@ -1,0 +1,13 @@
+public class Ex16 {
+ 
+    public static void main(String[] args) {
+ 
+    	int gasto_tot = 15000 + 23000 + 17000;
+    	
+    	int media_mes = gasto_tot / 3;
+        
+        System.out.printf("Gasto total: %s \nMédia de gastos mensal: %s", gasto_tot, media_mes);
+       
+    }
+}
+ 

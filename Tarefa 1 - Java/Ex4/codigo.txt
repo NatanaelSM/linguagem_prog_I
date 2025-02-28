@@ -1,0 +1,18 @@
+import java.util.Scanner;
+ 
+public class Ex4 {
+ 
+    public static void main(String[] args) {
+ 
+        Scanner scanner = new Scanner(System.in);
+ 
+        System.out.println("Custo de fábrica:");
+        Float val_fabrica = scanner.nextFloat();
+ 
+        Float val_final = val_fabrica + (val_fabrica * 0.28f) + (val_fabrica * 0.45f);
+        		
+        System.out.println(val_final);
+ 
+        scanner.close();
+    }
+}

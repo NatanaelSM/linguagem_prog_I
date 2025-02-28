@@ -1,0 +1,21 @@
+import java.util.Scanner;
+ 
+public class Ex8 {
+ 
+    public static void main(String[] args) {
+ 
+        Scanner scanner = new Scanner(System.in);
+ 
+        System.out.println("Numero:");
+        Float num = scanner.nextFloat();
+ 
+        if (num<0) {
+        	System.out.println("Negativo!");
+        }else {
+        	System.out.println("Positivo!");
+        }
+ 
+        scanner.close();
+    }
+}
+ 

@@ -1,0 +1,27 @@
+import java.util.Scanner;
+ 
+public class Ex5 {
+ 
+    public static void main(String[] args) {
+ 
+        Scanner scanner = new Scanner(System.in);
+ 
+        System.out.println("Numeros de carros vendidos:");
+        int num_carros_vend = scanner.nextInt();
+ 
+        System.out.println("Valor total de vendas:");
+        double tot_vendas = scanner.nextDouble();
+ 
+        System.out.println("Salario fixo:");
+        double salario = scanner.nextDouble();
+ 
+        System.out.println("Comissão em %:");
+        int comissao = scanner.nextInt();
+ 
+        double salario_final = salario + (comissao/100 * num_carros_vend) + (0.5 * tot_vendas);
+ 
+        System.out.println("Salário final: " + salario_final);
+ 
+        scanner.close();
+    }
+}

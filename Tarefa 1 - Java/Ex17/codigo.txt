@@ -1,0 +1,42 @@
+import java.util.Scanner;
+ 
+public class Ex17 {
+ 
+    public static void main(String[] args) {
+ 
+    	Scanner scanner = new Scanner(System.in);
+ 
+        System.out.println("Nota P1:");
+        Double p1 = scanner.nextDouble();
+        
+        System.out.println("Nota E1:");
+        Double e1 = scanner.nextDouble();
+        
+        System.out.println("Nota E2:");
+        Double e2 = scanner.nextDouble();
+        
+        System.out.println("Ponto extra:");
+        Double ponto_extra = scanner.nextDouble();
+        
+        System.out.println("Nota API:");
+        Double api = scanner.nextDouble();
+        
+        System.out.println("Nota sub:");
+        Double sub = scanner.nextDouble();
+        
+        double M = p1 * 0.6 + ((e1 + e2) / 2) * 0.4;
+ 
+        double parte1 = M * 0.5;
+ 
+        double parte2 = (M > 5.9) ? api * 0.5 : 0;
+ 
+        double parte3 = ponto_extra;
+        double parte4 = sub * 0.3;
+ 
+        double mediaFinal = parte1 + parte2 + parte3 + parte4;
+ 
+        System.out.println("A média final de LP1 é: " + mediaFinal);
+        
+        scanner.close();
+    }
+}

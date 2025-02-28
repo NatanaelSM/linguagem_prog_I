@@ -1,0 +1,27 @@
+import java.util.Scanner;
+ 
+public class Ex14 {
+ 
+    public static void main(String[] args) {
+ 
+    	Scanner scanner = new Scanner(System.in);
+    	
+    	int temp_jogo;
+ 
+        System.out.println("Horário de início:");
+        int hora_inicial = scanner.nextInt();
+ 
+        System.out.println("Horário final:");
+        int hora_final = scanner.nextInt();
+        
+        if (hora_inicial > hora_final) {
+        	temp_jogo = (24-hora_inicial) + hora_inicial;
+        }else {
+        	temp_jogo = hora_final - hora_inicial;
+        }
+        
+        System.out.println(temp_jogo);
+       
+        scanner.close();
+    }
+}

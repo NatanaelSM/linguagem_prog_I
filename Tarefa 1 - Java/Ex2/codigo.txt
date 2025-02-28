@@ -1,0 +1,29 @@
+import java.util.Scanner;
+ 
+public class Ex2 {
+ 
+	public static void main(String []args) {
+		
+	       Scanner scanner = new Scanner(System.in);
+	       
+	       System.out.println("Total de eleitores:");
+	       Integer tot_eleitores = scanner.nextInt();
+	       
+	       System.out.println("Votos brancos:");
+	       Integer brancos = scanner.nextInt();
+	       
+	       System.out.println("Votos nulos:");
+	       Integer nulos = scanner.nextInt();
+	       
+	       System.out.println("Votos válidos:");
+	       Integer validos = scanner.nextInt();
+	       
+	       Float perc_brancos = (float) ((brancos*100)/tot_eleitores);
+	       Float perc_nulos = (float) ((nulos*100)/tot_eleitores);
+	       Float perc_validos = (float) ((validos*100)/tot_eleitores);
+	       
+	       System.out.println("O percentual de votos brancos é " + perc_brancos + ", de nulos " + perc_nulos + " e válidos " + perc_validos);
+	       
+	   }
+	
+}

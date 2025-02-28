@@ -1,0 +1,21 @@
+import java.util.Scanner;
+ 
+public class Ex3 {
+ 
+	public static void main(String []args) {
+		
+	       Scanner scanner = new Scanner(System.in);
+	       
+	       System.out.println("Salario atual:");
+	       Float salario_atual = scanner.nextFloat();
+	       
+	       System.out.println("Reajuste:");
+	       Float reajuste = scanner.nextFloat();
+	  
+	       Float new_salario = (Float) salario_atual*(reajuste/100+1);
+	       
+	       System.out.println(new_salario);
+	       
+	   }
+	
+}

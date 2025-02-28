@@ -1,0 +1,24 @@
+import java.util.Scanner;
+ 
+class Ex1{
+	
+	public static void main(String []args) {
+		
+	       Scanner scanner = new Scanner(System.in);
+	       
+	       System.out.println("Anos:");
+	       Integer anos = scanner.nextInt();
+	       
+	       System.out.println("Meses:");
+	       Integer meses = scanner.nextInt();
+	       
+	       System.out.println("Dias:");
+	       Integer dias = scanner.nextInt();
+	       
+	       Integer idade = anos*365 + meses*30 + dias ;
+	       
+	       System.out.println(idade);
+	       
+	   }
+ 
+}

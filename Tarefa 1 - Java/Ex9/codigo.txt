@@ -1,0 +1,25 @@
+import java.util.Scanner;
+ 
+public class Ex9 {
+ 
+    public static void main(String[] args) {
+ 
+        Scanner scanner = new Scanner(System.in);
+ 
+        Float valor_maca;
+        
+        System.out.println("Numero de maças compradas:");
+        Float num_macas = scanner.nextFloat();
+        
+        
+ 
+        if (num_macas<12) {
+        	valor_maca = num_macas * 1.3f;
+        	System.out.println(valor_maca);
+        }else {
+        	System.out.println(num_macas);
+        }
+ 
+        scanner.close();
+    }
+}
