@@ -27,7 +27,7 @@ public class TelaFuncionario extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Metodo 1");
+        jButton1.setText("Aumentar salário");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -52,14 +52,14 @@ public class TelaFuncionario extends javax.swing.JFrame {
 
         jLabel5.setText("Sexo");
 
-        jButton2.setText("Metodo 3");
+        jButton2.setText("Entrar em serviço");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Metodo 2");
+        jButton3.setText("Almoçar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -86,11 +86,11 @@ public class TelaFuncionario extends javax.swing.JFrame {
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton2)
-                    .addComponent(jButton3))
+                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(49, 49, 49))
             .addGroup(layout.createSequentialGroup()
                 .addGap(91, 91, 91)
@@ -146,14 +146,14 @@ public class TelaFuncionario extends javax.swing.JFrame {
         if(funcionario == null){
             JOptionPane.showMessageDialog(this, "O funcionario não existe!");
         }
-        JOptionPane.showMessageDialog(this, funcionario.almocar());
+        JOptionPane.showMessageDialog(this, funcionario.entrarEmServico());
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         if(funcionario == null){
             JOptionPane.showMessageDialog(this, "O funcionario não existe!");
         }
-        JOptionPane.showMessageDialog(this, funcionario.entrarEmServico());
+        JOptionPane.showMessageDialog(this, funcionario.almocar());
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -165,6 +165,10 @@ public class TelaFuncionario extends javax.swing.JFrame {
         funcionario = new Funcionario(nome, Double.parseDouble(salario), sexo);
         
         JOptionPane.showMessageDialog(this, "Funcionário criado!");
+        
+        jTextField1.setText("");
+        jTextField2.setText("");
+        jTextField3.setText("");
     }//GEN-LAST:event_jButton5ActionPerformed
                                         
     public static void main(String args[]) {

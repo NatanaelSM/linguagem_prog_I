@@ -27,7 +27,7 @@ public class TelaEndereco extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Metodo 1");
+        jButton1.setText("Exibir endereço");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -52,14 +52,14 @@ public class TelaEndereco extends javax.swing.JFrame {
 
         jLabel5.setText("Bairro");
 
-        jButton2.setText("Metodo 3");
+        jButton2.setText("Exibir rua");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Metodo 2");
+        jButton3.setText("Mudar Endereço");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -86,11 +86,11 @@ public class TelaEndereco extends javax.swing.JFrame {
                     .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
+                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(49, 49, 49))
             .addGroup(layout.createSequentialGroup()
                 .addGap(91, 91, 91)
@@ -144,7 +144,7 @@ public class TelaEndereco extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         if(endereco == null){
-            JOptionPane.showMessageDialog(this, "O funcionario não existe!");
+            JOptionPane.showMessageDialog(this, "O endereco não existe!");
         }
         JOptionPane.showMessageDialog(this, endereco.getRua());
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -165,6 +165,10 @@ public class TelaEndereco extends javax.swing.JFrame {
         endereco = new Endereco(rua, Integer.parseInt(numero), bairro);
         
         JOptionPane.showMessageDialog(this, "Endereço criado!");
+        
+        jTextField1.setText("");
+        jTextField2.setText("");
+        jTextField3.setText("");
     }//GEN-LAST:event_jButton5ActionPerformed
                                         
 

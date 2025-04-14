@@ -29,7 +29,7 @@ public class TelaCarro extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Metodo 1");
+        jButton1.setText("Ligar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -54,14 +54,14 @@ public class TelaCarro extends javax.swing.JFrame {
 
         jLabel5.setText("Ano");
 
-        jButton2.setText("Metodo 3");
+        jButton2.setText("Buzinar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Metodo 2");
+        jButton3.setText("Desligar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -88,7 +88,7 @@ public class TelaCarro extends javax.swing.JFrame {
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton1)
                     .addComponent(jButton2)
@@ -148,14 +148,14 @@ public class TelaCarro extends javax.swing.JFrame {
         if(carro == null){
             JOptionPane.showMessageDialog(this, "O carro não existe!");
         }
-        JOptionPane.showMessageDialog(this, carro.desligar());
+        JOptionPane.showMessageDialog(this, carro.buzinar());
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         if(carro == null){
             JOptionPane.showMessageDialog(this, "O carro não existe!");
         }
-        JOptionPane.showMessageDialog(this, carro.buzinar());
+        JOptionPane.showMessageDialog(this, carro.desligar());
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -167,6 +167,10 @@ public class TelaCarro extends javax.swing.JFrame {
         carro = new Carro(modelo, marca, Integer.parseInt(ano));
         
         JOptionPane.showMessageDialog(this, "Carro criado!");
+        
+        jTextField1.setText("");
+        jTextField2.setText("");
+        jTextField3.setText("");
     }//GEN-LAST:event_jButton5ActionPerformed
                                         
 
@@ -231,7 +235,7 @@ public class TelaCarro extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaLutador().setVisible(true);
+                new TelaCarro().setVisible(true);
             }
         });
     }

@@ -27,7 +27,7 @@ public class TelaLutador extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Metodo 1");
+        jButton1.setText("Treinar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -52,14 +52,14 @@ public class TelaLutador extends javax.swing.JFrame {
 
         jLabel5.setText("Altura");
 
-        jButton2.setText("Metodo 3");
+        jButton2.setText("Bater");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Metodo 2");
+        jButton3.setText("Lutar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -86,7 +86,7 @@ public class TelaLutador extends javax.swing.JFrame {
                     .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4)
                     .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton1)
                     .addComponent(jButton2)
@@ -144,16 +144,16 @@ public class TelaLutador extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         if(lutador == null){
-            JOptionPane.showMessageDialog(this, "O time não existe!");
+            JOptionPane.showMessageDialog(this, "O lutador não existe!");
         }
-        JOptionPane.showMessageDialog(this, lutador.lutar());
+        JOptionPane.showMessageDialog(this, lutador.bater());
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         if(lutador == null){
             JOptionPane.showMessageDialog(this, "O lutador não existe!");
         }
-        JOptionPane.showMessageDialog(this, lutador.bater());
+        JOptionPane.showMessageDialog(this, lutador.lutar());
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -164,7 +164,11 @@ public class TelaLutador extends javax.swing.JFrame {
         
         lutador = new Lutador(nome, Integer.parseInt(idade), Double.parseDouble(altura));
         
-        JOptionPane.showMessageDialog(this, "Pessoa criado!");
+        JOptionPane.showMessageDialog(this, "Lutador criado!");
+        
+        jTextField1.setText("");
+        jTextField2.setText("");
+        jTextField3.setText("");
     }//GEN-LAST:event_jButton5ActionPerformed
                                         
 

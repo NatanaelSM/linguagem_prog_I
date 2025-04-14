@@ -28,7 +28,7 @@ public class TelaVestimenta extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Metodo 1");
+        jButton1.setText("Aumentar preço");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -53,14 +53,14 @@ public class TelaVestimenta extends javax.swing.JFrame {
 
         jLabel5.setText("Preco");
 
-        jButton2.setText("Metodo 3");
+        jButton2.setText("Vender");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Metodo 2");
+        jButton3.setText("Numero de unidades");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -87,7 +87,7 @@ public class TelaVestimenta extends javax.swing.JFrame {
                     .addComponent(jLabel4)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton1)
                     .addComponent(jButton2)
@@ -147,7 +147,7 @@ public class TelaVestimenta extends javax.swing.JFrame {
         if(vestimenta == null){
             JOptionPane.showMessageDialog(this, "O vestimenta não existe!");
         }
-        JOptionPane.showMessageDialog(this, vestimenta.aumentarSalario(100));
+        JOptionPane.showMessageDialog(this, vestimenta.vender(100));
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -166,6 +166,10 @@ public class TelaVestimenta extends javax.swing.JFrame {
         vestimenta = new Vestimenta(tipo, Integer.parseInt(unidade),Double.parseDouble(preco));
         
         JOptionPane.showMessageDialog(this, "vestimenta criado!");
+        
+        jTextField1.setText("");
+        jTextField2.setText("");
+        jTextField3.setText("");
     }//GEN-LAST:event_jButton5ActionPerformed
                                         
 
