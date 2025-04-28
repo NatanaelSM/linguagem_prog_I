@@ -1,6 +1,5 @@
 package com.tarefa3.tarefa3.Vestimenta;
 
-import com.tarefa3.tarefa3.Vestimenta.TelaVestimenta;
 import javax.swing.JOptionPane;
 
 public class TelaVestimenta extends javax.swing.JFrame {
@@ -26,7 +25,7 @@ public class TelaVestimenta extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jButton1.setText("Aumentar preço");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
