@@ -7,12 +7,12 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class MainScreenApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/github/natanael/projlinguagem/view/animal.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MainScreenApplication.class.getResource("/com/github/natanael/projlinguagem/view/MainScreen.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Hello!");
+        stage.setTitle("Tarefa 4");
         stage.setScene(scene);
         stage.show();
     }
