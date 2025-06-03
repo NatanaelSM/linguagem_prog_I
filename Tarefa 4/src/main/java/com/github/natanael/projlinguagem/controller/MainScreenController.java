@@ -6,7 +6,6 @@ import javafx.scene.control.SplitMenuButton;
 
 public class MainScreenController {
 
-    private AnimalController animalController;
     @FXML
     private SplitMenuButton extintoMenu;
 
@@ -24,7 +23,13 @@ public class MainScreenController {
 
     @FXML
     private void onCadastrarAnimal(ActionEvent event){
-        this.animalController = new AnimalController("Teste", "teste", false);
-        animalController.cadastrarAnimal();
+        AnimalController animalController = new AnimalController();
+        animalController.cadastrarAnimal("Ops", "tesadste", true);
+    }
+
+    @FXML
+    public void onDeletarAnimal(ActionEvent actionEvent) {
+        AnimalController animalController = new AnimalController();
+        animalController.deletarAnimal(11);
     }
 }

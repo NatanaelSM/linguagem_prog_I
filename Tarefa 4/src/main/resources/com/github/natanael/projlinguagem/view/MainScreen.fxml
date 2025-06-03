@@ -90,8 +90,8 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Button fx:id="btnCadastrarAnimal" onAction="#onCadastrarAnimal" mnemonicParsing="false" prefWidth="100.0" text="Cadastrar" />
-                        <Button mnemonicParsing="false" prefWidth="100.0" text="Deletar" GridPane.columnIndex="1" />
+                        <Button onAction="#onCadastrarAnimal" mnemonicParsing="false" prefWidth="100.0" text="Cadastrar" />
+                        <Button onAction="#onDeletarAnimal" mnemonicParsing="false" prefWidth="100.0" text="Deletar" GridPane.columnIndex="1" />
                         <Button mnemonicParsing="false" prefWidth="100.0" text="Alterar" GridPane.columnIndex="2" />
                      </children>
                   </GridPane>

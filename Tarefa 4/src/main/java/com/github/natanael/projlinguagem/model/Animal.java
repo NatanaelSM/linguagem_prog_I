@@ -2,6 +2,7 @@ package com.github.natanael.projlinguagem.model;
 
 public class Animal {
 
+    private int id;
     private String raca;
     private Boolean extinto;
     private String nome;
@@ -36,4 +37,11 @@ public class Animal {
         this.nome = nome;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }
