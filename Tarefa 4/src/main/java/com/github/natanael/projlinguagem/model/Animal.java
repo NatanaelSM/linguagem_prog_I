@@ -11,6 +11,14 @@ public class Animal {
         this.raca = raca;
         this.extinto = extinto;
         this.nome = nome;
+
+    }
+
+    public Animal(int id, String raca, Boolean extinto, String nome) {
+        this.id = id;
+        this.raca = raca;
+        this.extinto = extinto;
+        this.nome = nome;
     }
 
     public String getRaca() {

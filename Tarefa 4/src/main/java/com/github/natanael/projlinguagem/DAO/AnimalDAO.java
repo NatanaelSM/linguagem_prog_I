@@ -7,6 +7,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class AnimalDAO {
 
@@ -54,6 +56,35 @@ public class AnimalDAO {
         }catch (SQLException ex){
             System.out.println(ex.getMessage());
             return false;
+        }
+    }
+
+    public List<Animal> listar() {
+
+        String sql = "SELECT * FROM animal";
+        List<Animal> animais = new ArrayList<>();
+
+        try{
+            PreparedStatement stmt = conexao.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+
+            while(rs.next()){
+                int id = rs.getInt("id");
+                String nome = rs.getString("nome");
+                String raca = rs.getString("raca");
+                int extintoBinario = rs.getInt("extinto");
+                Boolean extinto = (extintoBinario == 0) ? false : true;
+                Animal animal = new Animal(id ,raca, extinto, nome);
+                animais.add(animal);
+            }
+
+            stmt.execute();
+            stmt.close();
+            return animais;
+
+        }catch (SQLException ex){
+            System.out.println(ex.getMessage());
+            return null;
         }
     }
 

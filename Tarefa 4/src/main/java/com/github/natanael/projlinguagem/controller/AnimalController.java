@@ -16,4 +16,7 @@ public class AnimalController {
         animalDAO.deletar(id);
     }
 
+    public void listarAnimal() {
+        animalDAO.listar();
+    }
 }
