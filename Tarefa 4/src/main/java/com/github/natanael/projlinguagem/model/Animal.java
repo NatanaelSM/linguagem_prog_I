@@ -7,11 +7,12 @@ public class Animal {
     private Boolean extinto;
     private String nome;
 
+    public Animal() {}
+
     public Animal (String raca, Boolean extinto, String nome) {
         this.raca = raca;
         this.extinto = extinto;
         this.nome = nome;
-
     }
 
     public Animal(int id, String raca, Boolean extinto, String nome) {

@@ -3,6 +3,8 @@ package com.github.natanael.projlinguagem.controller;
 import com.github.natanael.projlinguagem.DAO.AnimalDAO;
 import com.github.natanael.projlinguagem.model.Animal;
 
+import java.util.List;
+
 public class AnimalController {
 
     private AnimalDAO animalDAO = new AnimalDAO();
@@ -16,7 +18,11 @@ public class AnimalController {
         animalDAO.deletar(id);
     }
 
-    public void listarAnimal() {
-        animalDAO.listar();
+    public List<Animal> listarAnimal() {
+        return animalDAO.listar();
+    }
+
+    public void updateAnimal(Animal animal) {
+        animalDAO.atualizar(animal);
     }
 }

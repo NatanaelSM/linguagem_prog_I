@@ -63,8 +63,8 @@
                               <Font name="Brush Script MT Italic" size="17.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="100.0" GridPane.columnIndex="1" />
-                        <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="nomeField" layoutX="100.0" GridPane.columnIndex="1" />
+                        <TextField fx:id="racaField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                         <SplitMenuButton fx:id="extintoMenu" mnemonicParsing="false" prefHeight="26.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                           <items>
                             <MenuItem mnemonicParsing="false" onAction="#onExtintoSim" text="Sim" />
@@ -73,14 +73,15 @@
                         </SplitMenuButton>
                      </children>
                   </GridPane>
-                  <TableView layoutX="98.0" layoutY="320.0" prefHeight="200.0" prefWidth="411.0">
-                    <columns>
-                      <TableColumn prefWidth="135.0" text="Nome" />
-                      <TableColumn minWidth="0.0" prefWidth="135.0" text="Raça" />
-                        <TableColumn minWidth="0.0" prefWidth="135.0" text="Extinto" />
-                    </columns>
-                  </TableView>
-                  <GridPane layoutX="102.0" layoutY="261.0" prefHeight="37.0" prefWidth="402.0">
+                   <TableView fx:id="animalTable" layoutX="98.0" layoutY="320.0" prefHeight="200.0" prefWidth="411.0">
+                       <columns>
+                           <TableColumn fx:id="nomeColumn" prefWidth="135.0" text="Nome" />
+                           <TableColumn fx:id="racaColumn" prefWidth="135.0" text="Raça" />
+                           <TableColumn fx:id="extintoColumn" prefWidth="135.0" text="Extinto" />
+                       </columns>
+                   </TableView>
+
+                   <GridPane layoutX="102.0" layoutY="261.0" prefHeight="37.0" prefWidth="402.0">
                     <columnConstraints>
                       <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                       <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -92,7 +93,7 @@
                      <children>
                         <Button onAction="#onCadastrarAnimal" mnemonicParsing="false" prefWidth="100.0" text="Cadastrar" />
                         <Button onAction="#onDeletarAnimal" mnemonicParsing="false" prefWidth="100.0" text="Deletar" GridPane.columnIndex="1" />
-                        <Button mnemonicParsing="false" prefWidth="100.0" text="Alterar" GridPane.columnIndex="2" />
+                        <Button onAction="#onAtualizarAnimal" mnemonicParsing="false" prefWidth="100.0" text="Alterar" GridPane.columnIndex="2" />
                      </children>
                   </GridPane>
                </children>

@@ -2,7 +2,6 @@ package com.github.natanael.projlinguagem.DAO;
 
 import com.github.natanael.projlinguagem.Util.ConexaoBD;
 import com.github.natanael.projlinguagem.model.Animal;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -87,5 +86,30 @@ public class AnimalDAO {
             return null;
         }
     }
+
+    public boolean atualizar(Animal animal) {
+        String sql = "UPDATE animal SET nome = ?, raca = ?, extinto = ? WHERE id = ?";
+
+        try{
+            PreparedStatement stmt = conexao.prepareStatement(sql);
+            int extinto = (animal.getExtinto()) ? 1 : 0;
+
+            stmt.setString(1, animal.getNome());
+            stmt.setString(2, animal.getRaca());
+            stmt.setInt(3, extinto);
+            stmt.setInt(4, animal.getId());
+
+            stmt.execute();
+            stmt.close();
+            return true;
+
+        }catch (SQLException ex){
+            System.out.println(ex.getMessage());
+            return false;
+        }
+
+    }
+
+
 
 }
