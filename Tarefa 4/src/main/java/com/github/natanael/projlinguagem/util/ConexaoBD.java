@@ -1,4 +1,4 @@
-package com.github.natanael.projlinguagem.Util;
+package com.github.natanael.projlinguagem.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
