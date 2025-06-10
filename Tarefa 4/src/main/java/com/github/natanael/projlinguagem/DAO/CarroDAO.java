@@ -9,11 +9,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CarroDao {
+public class CarroDAO {
 
     private Connection conexao;
 
-    public CarroDao() {
+    public CarroDAO() {
         conexao = ConexaoBD.getConexao();
     }
 

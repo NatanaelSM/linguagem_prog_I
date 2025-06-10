@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="537.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.natanael.projlinguagem.controller.FuncionarioTabController">
+
+    <children>
+        <!-- Título -->
+        <AnchorPane layoutX="-33.0" layoutY="14.0" prefHeight="96.0" prefWidth="329.0" style="-fx-background-color: #b18ced; -fx-background-radius: 15;">
+            <children>
+                <Label layoutX="72.0" layoutY="19.0" style="-fx-font-size: 40;" text="Funcionário" textFill="WHITE">
+                    <font>
+                        <Font name="Bodoni MT Black" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+
+        <!-- Imagem -->
+        <ImageView fitHeight="91.0" fitWidth="189.0" layoutX="561.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/funcionarios.png" />
+            </image>
+        </ImageView>
+
+        <!-- Tabela -->
+        <TableView fx:id="funcionarioTable" layoutX="98.0" layoutY="320.0" prefHeight="200.0" prefWidth="411.0">
+            <columns>
+                <TableColumn fx:id="nomeColumn" prefWidth="135.0" text="Nome" />
+                <TableColumn fx:id="salarioColumn" prefWidth="135.0" text="Salário" />
+                <TableColumn fx:id="sexoColumn" prefWidth="135.0" text="Sexo" />
+            </columns>
+        </TableView>
+
+              <!-- Label Métodos -->
+        <Label layoutX="599.0" layoutY="133.0" text="Métodos" textAlignment="CENTER">
+            <font>
+            <Font size="17.0" />
+         </font>
+        </Label>
+      <GridPane layoutX="576.0" layoutY="163.0" prefHeight="154.0" prefWidth="113.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#onEntrarServico" prefWidth="115.0" text="Entrar em Serviço" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#onAlmocar" prefHeight="26.0" prefWidth="115.0" text="Almoçar" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#onAumentarSalario" prefHeight="26.0" prefWidth="115.0" text="Aumentar Salário" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="112.0" layoutY="271.0" prefHeight="37.0" prefWidth="402.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#onCadastrarFuncionario" prefWidth="100.0" text="Cadastrar" />
+            <Button mnemonicParsing="false" onAction="#onDeletarFuncionario" prefWidth="100.0" text="Deletar" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" onAction="#onAtualizarFuncionario" prefWidth="100.0" text="Alterar" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="42.0" layoutY="163.0" prefHeight="91.0" prefWidth="469.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.20001220703125" minWidth="10.0" prefWidth="68.80003662109374" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="409.59996337890624" minWidth="10.0" prefWidth="401.59996337890624" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="26.0" prefWidth="48.0" text="Nome" textAlignment="RIGHT" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Brush Script MT Italic" size="17.0" />
+               </font>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="52.0" text="Salário" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Brush Script MT Italic" size="17.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="RIGHT" prefHeight="26.0" prefWidth="38.0" text="Sexo" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Brush Script MT Italic" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nomeField" layoutX="100.0" GridPane.columnIndex="1" />
+            <TextField fx:id="salarioField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="sexoField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+
+    </children>
+</AnchorPane>

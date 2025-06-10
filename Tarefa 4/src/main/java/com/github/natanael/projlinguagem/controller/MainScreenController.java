@@ -15,14 +15,22 @@ public class MainScreenController implements Initializable {
     private Tab animalTab;
     @FXML
     private Tab carroTab;
+    @FXML
+    private Tab funcionarioTab;
+    @FXML
+    private Tab pagamentoTab;
 
     public void initialize(URL location, ResourceBundle resources) {
         try {
             AnchorPane animalContent = FXMLLoader.load(getClass().getResource("/com/github/natanael/projlinguagem/view/AnimalTab.fxml"));
             AnchorPane carroContent = FXMLLoader.load(getClass().getResource("/com/github/natanael/projlinguagem/view/CarroTab.fxml"));
+            AnchorPane funcionarioContent = FXMLLoader.load(getClass().getResource("/com/github/natanael/projlinguagem/view/FuncionarioTab.fxml"));
+            AnchorPane pagamentoContent = FXMLLoader.load(getClass().getResource("/com/github/natanael/projlinguagem/view/PagamentoTab.fxml"));
 
             animalTab.setContent(animalContent);
             carroTab.setContent(carroContent);
+            funcionarioTab.setContent(funcionarioContent);
+            pagamentoTab.setContent(pagamentoContent);
         } catch (IOException e) {
             e.printStackTrace();
         }

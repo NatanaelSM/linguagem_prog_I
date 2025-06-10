@@ -7,5 +7,7 @@
   <tabs>
       <Tab fx:id="animalTab" text="Animal" />
       <Tab fx:id="carroTab" text="Carro" />
+      <Tab fx:id="funcionarioTab" text="Funcionario" />
+      <Tab fx:id="pagamentoTab" text="Pagamento" />
   </tabs>
 </TabPane>

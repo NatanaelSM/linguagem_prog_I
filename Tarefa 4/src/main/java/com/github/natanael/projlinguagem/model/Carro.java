@@ -53,17 +53,4 @@ public class Carro {
     public void setId(int id) {
         this.id = id;
     }
-
-//	public String ligar () {
-//		return "O " + modelo + " da marca " + marca + " e ano " + ano + " ligou!";
-//	}
-//
-//	public String desligar () {
-//		return "O " + modelo + " da marca " + marca + " e ano " + ano + " desligou!";
-//	}
-//
-//	public String buzinar () {
-//		return "O " + modelo + " da marca " + marca + " e ano " + ano + " buzinou!";
-//	}
-	
 }
