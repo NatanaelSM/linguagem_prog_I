@@ -1,4 +1,4 @@
-package com.github.natanael.projlinguagem.controller;
+package com.github.natanael.projlinguagem.controller.pagamento;
 
 import com.github.natanael.projlinguagem.DAO.PagamentoDAO;
 import com.github.natanael.projlinguagem.model.Pagamento;

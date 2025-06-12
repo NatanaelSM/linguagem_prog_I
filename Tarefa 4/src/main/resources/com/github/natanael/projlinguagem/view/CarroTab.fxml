@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="537.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.natanael.projlinguagem.controller.CarroTabController">
+<AnchorPane prefHeight="537.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.natanael.projlinguagem.controller.carro.CarroTabController">
     <children>
         <AnchorPane layoutX="-33.0" layoutY="14.0" prefHeight="96.0" prefWidth="329.0" style="-fx-background-color: #4287f5; -fx-background-radius: 15;">
             <children>

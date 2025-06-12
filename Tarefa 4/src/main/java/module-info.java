@@ -12,4 +12,9 @@ module com.github.natanael.projlinguagem {
     opens com.github.natanael.projlinguagem.controller to javafx.fxml;
     opens com.github.natanael.projlinguagem.model to javafx.base;
     exports com.github.natanael.projlinguagem;
+    opens com.github.natanael.projlinguagem.controller.animal to javafx.fxml;
+    opens com.github.natanael.projlinguagem.controller.carro to javafx.fxml;
+    opens com.github.natanael.projlinguagem.controller.funcionario to javafx.fxml;
+    opens com.github.natanael.projlinguagem.controller.pagamento to javafx.fxml;
+    opens com.github.natanael.projlinguagem.controller.lutador to javafx.fxml;
 }

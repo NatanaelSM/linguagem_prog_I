@@ -1,7 +1,5 @@
-package com.github.natanael.projlinguagem.controller;
+package com.github.natanael.projlinguagem.controller.pagamento;
 
-import com.github.natanael.projlinguagem.DAO.AnimalDAO;
-import com.github.natanael.projlinguagem.DAO.PagamentoDAO;
 import com.github.natanael.projlinguagem.model.Pagamento;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -12,7 +10,6 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
-import java.util.List;
 import java.util.ResourceBundle;
 
 public class PagamentoTabController implements Initializable {

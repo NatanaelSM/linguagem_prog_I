@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="537.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.natanael.projlinguagem.controller.funcionario.FuncionarioTabController">
+<AnchorPane prefHeight="537.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.natanael.projlinguagem.controller.lutador.LutadorTabController">
 
     <children>
         <!-- Título -->
-        <AnchorPane layoutX="-33.0" layoutY="14.0" prefHeight="96.0" prefWidth="329.0" style="-fx-background-color: #b18ced; -fx-background-radius: 15;">
+        <AnchorPane layoutX="-33.0" layoutY="14.0" prefHeight="96.0" prefWidth="329.0" style="-fx-background-color: #025e61; -fx-background-radius: 15;">
             <children>
-                <Label layoutX="72.0" layoutY="19.0" style="-fx-font-size: 40;" text="Funcionário" textFill="WHITE">
+                <Label layoutX="72.0" layoutY="19.0" style="-fx-font-size: 40;" text="Lutador" textFill="WHITE">
                     <font>
                         <Font name="Bodoni MT Black" size="12.0" />
                     </font>
@@ -30,16 +22,16 @@
         <!-- Imagem -->
         <ImageView fitHeight="91.0" fitWidth="189.0" layoutX="561.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../images/funcionarios.png" />
+                <Image url="@../images/lutadores.avif" />
             </image>
         </ImageView>
 
         <!-- Tabela -->
-        <TableView fx:id="funcionarioTable" layoutX="98.0" layoutY="320.0" prefHeight="200.0" prefWidth="411.0">
+        <TableView fx:id="lutadorTable" layoutX="98.0" layoutY="320.0" prefHeight="200.0" prefWidth="411.0">
             <columns>
                 <TableColumn fx:id="nomeColumn" prefWidth="135.0" text="Nome" />
-                <TableColumn fx:id="salarioColumn" prefWidth="135.0" text="Salário" />
-                <TableColumn fx:id="sexoColumn" prefWidth="135.0" text="Sexo" />
+                <TableColumn fx:id="idadeColumn" prefWidth="135.0" text="Idade" />
+                <TableColumn fx:id="alturaColumn" prefWidth="135.0" text="Altura" />
             </columns>
         </TableView>
 
@@ -59,9 +51,9 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Button mnemonicParsing="false" onAction="#onEntrarServico" prefWidth="115.0" text="Entrar em Serviço" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-            <Button mnemonicParsing="false" onAction="#onAlmocar" prefHeight="26.0" prefWidth="115.0" text="Almoçar" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-            <Button mnemonicParsing="false" onAction="#onAumentarSalario" prefHeight="26.0" prefWidth="115.0" text="Aumentar Salário" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#onLutar" prefWidth="115.0" text="Lutar" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#onTreinar" prefHeight="26.0" prefWidth="115.0" text="Treinar" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#onBater" prefHeight="26.0" prefWidth="115.0" text="Bater" GridPane.rowIndex="2" />
          </children>
       </GridPane>
       <GridPane layoutX="112.0" layoutY="271.0" prefHeight="37.0" prefWidth="402.0">
@@ -74,9 +66,9 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Button mnemonicParsing="false" onAction="#onCadastrarFuncionario" prefWidth="100.0" text="Cadastrar" />
-            <Button mnemonicParsing="false" onAction="#onDeletarFuncionario" prefWidth="100.0" text="Deletar" GridPane.columnIndex="1" />
-            <Button mnemonicParsing="false" onAction="#onAtualizarFuncionario" prefWidth="100.0" text="Alterar" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" onAction="#onCadastrarLutador" prefWidth="100.0" text="Cadastrar" />
+            <Button mnemonicParsing="false" onAction="#onDeletarLutador" prefWidth="100.0" text="Deletar" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" onAction="#onAtualizarLutador" prefWidth="100.0" text="Alterar" GridPane.columnIndex="2" />
          </children>
       </GridPane>
       <GridPane layoutX="42.0" layoutY="163.0" prefHeight="91.0" prefWidth="469.0">
@@ -95,19 +87,19 @@
                   <Font name="Brush Script MT Italic" size="17.0" />
                </font>
             </Label>
-            <Label prefHeight="26.0" prefWidth="52.0" text="Salário" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <Label prefHeight="26.0" prefWidth="52.0" text="Idade" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
                   <Font name="Brush Script MT Italic" size="17.0" />
                </font>
             </Label>
-            <Label contentDisplay="RIGHT" prefHeight="26.0" prefWidth="38.0" text="Sexo" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <Label contentDisplay="RIGHT" prefHeight="26.0" prefWidth="48.0" text="Altura" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <font>
                   <Font name="Brush Script MT Italic" size="17.0" />
                </font>
             </Label>
             <TextField fx:id="nomeField" layoutX="100.0" GridPane.columnIndex="1" />
-            <TextField fx:id="salarioField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="sexoField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="idadeField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="alturaField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
 

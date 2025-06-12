@@ -1,4 +1,4 @@
-package com.github.natanael.projlinguagem.controller;
+package com.github.natanael.projlinguagem.controller.animal;
 
 import com.github.natanael.projlinguagem.model.Animal;
 import javafx.collections.FXCollections;

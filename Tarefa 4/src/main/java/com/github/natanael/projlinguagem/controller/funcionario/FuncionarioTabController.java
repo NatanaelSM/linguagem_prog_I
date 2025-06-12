@@ -1,4 +1,4 @@
-package com.github.natanael.projlinguagem.controller;
+package com.github.natanael.projlinguagem.controller.funcionario;
 
 import com.github.natanael.projlinguagem.model.Funcionario;
 import javafx.collections.FXCollections;

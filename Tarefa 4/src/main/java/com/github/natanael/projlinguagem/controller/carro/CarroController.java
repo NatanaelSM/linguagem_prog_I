@@ -1,4 +1,4 @@
-package com.github.natanael.projlinguagem.controller;
+package com.github.natanael.projlinguagem.controller.carro;
 
 import com.github.natanael.projlinguagem.DAO.CarroDAO;
 import com.github.natanael.projlinguagem.model.Carro;
