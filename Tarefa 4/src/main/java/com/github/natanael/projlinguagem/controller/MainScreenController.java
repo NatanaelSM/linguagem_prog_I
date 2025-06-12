@@ -21,6 +21,8 @@ public class MainScreenController implements Initializable {
     private Tab pagamentoTab;
     @FXML
     private Tab lutadorTab;
+    @FXML
+    private Tab timeTab;
 
     public void initialize(URL location, ResourceBundle resources) {
         try {
@@ -29,12 +31,14 @@ public class MainScreenController implements Initializable {
             AnchorPane funcionarioContent = FXMLLoader.load(getClass().getResource("/com/github/natanael/projlinguagem/view/FuncionarioTab.fxml"));
             AnchorPane pagamentoContent = FXMLLoader.load(getClass().getResource("/com/github/natanael/projlinguagem/view/PagamentoTab.fxml"));
             AnchorPane lutadorContent = FXMLLoader.load(getClass().getResource("/com/github/natanael/projlinguagem/view/LutadorTab.fxml"));
+            AnchorPane timeContent = FXMLLoader.load(getClass().getResource("/com/github/natanael/projlinguagem/view/TimeTab.fxml"));
 
             animalTab.setContent(animalContent);
             carroTab.setContent(carroContent);
             funcionarioTab.setContent(funcionarioContent);
             pagamentoTab.setContent(pagamentoContent);
             lutadorTab.setContent(lutadorContent);
+            timeTab.setContent(timeContent);
         } catch (IOException e) {
             e.printStackTrace();
         }

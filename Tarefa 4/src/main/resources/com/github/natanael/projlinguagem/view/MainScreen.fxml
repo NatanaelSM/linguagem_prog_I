@@ -10,5 +10,6 @@
       <Tab fx:id="funcionarioTab" text="Funcionario" />
       <Tab fx:id="pagamentoTab" text="Pagamento" />
       <Tab fx:id="lutadorTab" text="Lutador" />
+      <Tab fx:id="timeTab" text="Time" />
   </tabs>
 </TabPane>
