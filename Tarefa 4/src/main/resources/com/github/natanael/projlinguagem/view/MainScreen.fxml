@@ -13,5 +13,7 @@
       <Tab fx:id="timeTab" text="Time" />
       <Tab fx:id="pessoaTab" text="Pessoa" />
       <Tab fx:id="pilotoTab" text="Piloto" />
+      <Tab fx:id="vestimentaTab" text="Vestimenta" />
+      <Tab fx:id="enderecoTab" text="Endereço" />
   </tabs>
 </TabPane>
