@@ -87,12 +87,30 @@ public class TimeTabController implements Initializable {
         alert.showAndWait();
     }
 
-    public void onComprarTime(ActionEvent event) {
+    public void onComprarJogador(ActionEvent event) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
 
         if (selectedTimeId != 0) {
-            alert.setContentText("O time \"" + nomeField.getText() + "\" foi comprado!");
+            // Recupera os dados atuais
+            String nome = nomeField.getText();
+            String estado = estadoField.getText();
+            int numJogadores = Integer.parseInt(numJogadoresField.getText());
+
+            // Incrementa o número de jogadores
+            numJogadores++;
+
+            // Atualiza o campo de texto na interface
+            numJogadoresField.setText(String.valueOf(numJogadores));
+
+            // Atualiza o objeto e salva no banco
+            Time timeAtualizado = new Time(selectedTimeId, nome, numJogadores, estado);
+            timeController.atualizarTime(timeAtualizado);
+
+            // Atualiza a tabela
+            carregarTabela();
+
+            alert.setContentText("Um jogador foi comprado. O número de jogadores agora é " + numJogadores + "!");
         } else {
             alert.setContentText("Nenhum time selecionado!");
         }
@@ -100,18 +118,42 @@ public class TimeTabController implements Initializable {
         alert.showAndWait();
     }
 
-    public void onVenderTime(ActionEvent event) {
+
+    public void onVenderJogador(ActionEvent event) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText(null);
 
         if (selectedTimeId != 0) {
-            alert.setContentText("O time \"" + nomeField.getText() + "\" foi vendido!");
+            // Recupera os dados atuais
+            String nome = nomeField.getText();
+            String estado = estadoField.getText();
+            int numJogadores = Integer.parseInt(numJogadoresField.getText());
+
+            // Garante que não fique abaixo de zero
+            if (numJogadores > 0) {
+                numJogadores--;
+
+                // Atualiza o campo de texto na interface
+                numJogadoresField.setText(String.valueOf(numJogadores));
+
+                // Atualiza o objeto e salva no banco
+                Time timeAtualizado = new Time(selectedTimeId, nome, numJogadores, estado);
+                timeController.atualizarTime(timeAtualizado);
+
+                // Atualiza a tabela
+                carregarTabela();
+
+                alert.setContentText("Um jogador foi vendido. O número de jogadores agora é " + numJogadores + "!");
+            } else {
+                alert.setContentText("O time \"" + nome + "\" já não tem jogadores para vender.");
+            }
         } else {
             alert.setContentText("Nenhum time selecionado!");
         }
 
         alert.showAndWait();
     }
+
 
 
     private void carregarTabela() {

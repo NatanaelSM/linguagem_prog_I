@@ -18,4 +18,7 @@ module com.github.natanael.projlinguagem {
     opens com.github.natanael.projlinguagem.controller.pagamento to javafx.fxml;
     opens com.github.natanael.projlinguagem.controller.lutador to javafx.fxml;
     opens com.github.natanael.projlinguagem.controller.time to javafx.fxml;
+    opens com.github.natanael.projlinguagem.controller.pessoa to javafx.fxml;
+    opens com.github.natanael.projlinguagem.controller.piloto
+            to javafx.fxml;
 }

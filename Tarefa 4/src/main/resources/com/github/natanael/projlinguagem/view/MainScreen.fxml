@@ -11,5 +11,7 @@
       <Tab fx:id="pagamentoTab" text="Pagamento" />
       <Tab fx:id="lutadorTab" text="Lutador" />
       <Tab fx:id="timeTab" text="Time" />
+      <Tab fx:id="pessoaTab" text="Pessoa" />
+      <Tab fx:id="pilotoTab" text="Piloto" />
   </tabs>
 </TabPane>
